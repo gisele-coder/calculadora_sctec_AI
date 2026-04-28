@@ -12,12 +12,18 @@ def multiplicar(a, b):
 
 def dividir(a, b):
     if b == 0:
-        raise ValueError("Divisor não pode ser zero")
+        raise ValueError("Não é possível dividir por zero")
     return a / b
 
 
 def potencia(base, expoente):
     return base ** expoente
+
+
+def raiz_quadrada(n):
+    if n < 0:
+        raise ValueError("Não é possível calcular raiz quadrada de número negativo")
+    return n ** 0.5
 
 
 def fatorial(n):
